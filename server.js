@@ -64,8 +64,8 @@ app.post('/vegetables', (req, res) =>{
         console.error(err)
         res.status(400).send(err)
       } else {
-        // res.redirect('/vegetables')
-        res.send(createdVegetable)
+        res.redirect('/vegetables')
+        // res.send(createdVegetable)
       }
     })
   })
